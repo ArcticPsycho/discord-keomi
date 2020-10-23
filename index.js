@@ -23,10 +23,10 @@ message.channel.send(`Pong! This message had a latency of ${timeTaken}ms.`);
 	} else if (command === 'args-info') {
 	if (!args.length) {
 		return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
-	} else if (message.content === `${prefix}help`) {
-		message.channel.send(`Hello! If you're having bot issues, please submit a ticket in the Keomi Support server, which can be found here: https://discord.gg/tctgKsq\nFor command help, please use k!commands!`) {
-
 	message.channel.send(`Command name: ${command}\nArguments: ${args}`);
+} else if (message.content === `${prefix}help`) {
+                message.channel.send(`Hello! If you're having bot issues, please submit a ticket in the Keomi Support server, which can be found here: https://discord.gg/tctgKsq\nFor command help, please use k!commands!`) {   
+
 }
 });
 client.login(config.BOT_TOKEN);
